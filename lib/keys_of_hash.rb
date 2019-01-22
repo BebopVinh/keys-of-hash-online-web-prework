@@ -3,9 +3,11 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     new_array = []
-    self.each do |key, value|
-      if value == arguments
-        new_array << keys
+    arguments.each do |index|
+      self.each do |key, value|
+        if value == index
+          new_array << keys
+        end
       end
     end
     new_array
