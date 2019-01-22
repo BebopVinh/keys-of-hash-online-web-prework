@@ -10,6 +10,6 @@ class Hash
         end
       end
     end
+    new_array
   end
-  new_array
 end
