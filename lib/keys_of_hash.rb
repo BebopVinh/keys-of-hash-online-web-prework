@@ -6,7 +6,7 @@ class Hash
     arguments.each do |index|
       self.each do |key, value|
         if value == index
-          new_array << keys
+          new_array << key
         end
       end
     end
